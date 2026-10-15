@@ -4,7 +4,7 @@
  
     
 📌 Project Overview
-
+ 
 This project demonstrates a decoupled, highly available microservices infrastructure deployed on AWS (Amazon Web Services) [image_Hh8SjC.png]. The core objective of this architecture is to implement Path-Based Routing at Layer 7 using a single Application Load Balancer (ALB) [image_Hh8SjC.png].
 The ALB serves as the central traffic controller, evaluating incoming HTTP client requests and routing them to distinct, isolated backend Target Groups (tg-train-service, tg-plane-service, and tg-bus-service) depending on the requested URL path context [image_Hh8SjC.png]. To maximize fault isolation, each transport service runs on a dedicated Amazon EC2 instance mapped to its own distinct Availability Zone within the AWS Mumbai Region (ap-south-1) [image_Hh8SjC.png].
 
