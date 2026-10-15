@@ -1,5 +1,4 @@
-# AWS-PROJECT2
-This is my second AWS project
+
 
 # Path-Based Microservices Routing Architecture on AWS
  
@@ -10,6 +9,7 @@ This project demonstrates a decoupled, highly available microservices infrastruc
 The ALB serves as the central traffic controller, evaluating incoming HTTP client requests and routing them to distinct, isolated backend Target Groups (tg-train-service, tg-plane-service, and tg-bus-service) depending on the requested URL path context [image_Hh8SjC.png]. To maximize fault isolation, each transport service runs on a dedicated Amazon EC2 instance mapped to its own distinct Availability Zone within the AWS Mumbai Region (ap-south-1) [image_Hh8SjC.png].
 
 🏗️ Architecture Diagram
+<img width="1408" height="768" alt="image_dbf3d204" src="https://github.com/user-attachments/assets/9baf0b59-374b-4ac4-b523-c756f5d8162e" />
 
 
 
